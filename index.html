@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+
+    <meta charset="utf-8">
+    <title>AiSight Challenge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Alexis Carbillet ">
+ 
+    <!-- Control appearance when share by social media -->
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property='og:url' content="" />
+    <meta property="og:type" content="website" />
+
+	<!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/structure.css" rel="stylesheet">
+	
+  </head>
+  
+	<body>
+	
+	<!-- Navigation --> 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+		  <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#intro">subject</a>
+            </li>
+		  <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#method">method</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#results">results</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	
+	
+	<header class="masthead" id="intro">
+		<div class="container">
+			<div class="intro-text">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+						<h2 class="section-heading text-uppercase">Machine Learning With Images</h2>
+						<br/>
+						<div class="intro-lead-in">The task is to build the classifier for vehicles images recognizing using image descriptors. There is three classes of objects to recognize: personal transport, ambulance, police cars.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+		
+	<section  id="method">
+		<div class="container">
+			<div class="intro-text">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+						<h2 class="section-heading text-uppercase">Methods</h2>
+						<h3 class="section-subheading text-muted">First of all, the data needed to be download with pickle. The features of each image were extracted. Then it was necessary to reduce its dimension. By using SVD, it is possible to get one dimension per feature. So a dataset of features has been done, one line per image. The number of features depends of the image. So, the empty columns has been filled with 0. At the end, some classifiers have been compared.</h3>
+					</div>
+					<div class="row" style="padding-top: 5%">
+					
+					  <div class="col-lg-12 text-center">
+						<svg width="75%" height="100">
+						  <line x1="0" y1="50" x2="1000" y2="50" style="stroke:black; stroke-width:1.5" />
+
+						  <circle cx="150" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#69b3a2" />
+						  <text font-size="13" text-anchor="middle" x="70" y="30" fill="black">Data processing</text>
+						  <text style="font-style: italic" font-size="13" text-anchor="middle" x="70" y="80" fill="#808080">Cleaning</text>
+
+						  <circle cx="450" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#69b3a2" />
+						  <text font-size="13" text-anchor="middle" x="300" y="30" fill="black">Features extraction</text>
+						  <text style="font-style: italic" font-size="13" text-anchor="middle" x="300" y="80" fill="#808080">ORB</text>
+						  
+						  <circle cx="650" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#69b3a2" />
+						  <text font-size="13" text-anchor="middle" x="550" y="30" fill="black">Dimension reduction </text>
+						  <text style="font-style: italic" font-size="13" text-anchor="middle" x="550" y="80" fill="#808080">PCA, SVD</text>
+
+						  <text font-size="13" text-anchor="middle" x="750" y="30" fill="black">Machine Learning</text>
+						  <text style="font-style: italic" font-size="13" text-anchor="middle" x="750" y="80" fill="#808080">10 methods compared</text>
+						</svg>
+					  </div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section  id="results">
+		<div class="container">
+			<div class="intro-text">
+				<div class="row">
+					<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+						<h3 class="section-subheading text-muted">Here is an example of the images I worked with:</h3>
+						<img src="img/results/car.png" alt="" width="40%">
+					</div>
+					<div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+						<h3 class="section-subheading text-muted">Below is presented a comparison of different machine learning techniques.</h3>
+						<img src="img/results/res.png" alt="" width="40%">
+						<h3 class="section-subheading text-muted">The best classifier is the tree with a F1 score of 1. <br> The results can be find into the tables below: </h3>
+						<table class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text-center">
+						  <tr><th>Model</th><th>F1_score pump</th></tr>
+						  <tr><th>Bayes</th><th>0.558</th></tr>
+						  <tr><th>Percepton</th><th>0.934</th></tr>
+						  <tr><th>Multi-layer Perceptron</th><th>0.315</th></tr>
+						  <tr><th>Tree</th><th>1</th></tr>
+						  <tr><th>logistic Regression</th><th>0.972</th></tr>
+						  <tr><th>kNN 3 neighbors</th><th>0.974</th></tr>
+						  <tr><th>kNN 7 neighbors</th><th>0.974</th></tr>
+						  <tr><th>kNN 15 neighbors</th><th>0.974</th></tr>
+						  <tr><th>SVC</th><th>0.229</th></tr>
+						  <tr><th>Random Forest</th><th>0.557</th></tr>
+						</table>
+
+						<h3 class="section-subheading text-muted">As you can see, a lot of methods allow to have a good F1 score. The method train_test_split from the scikit-learn library has been used in order to get a train dataset and a test dataset. 20% of the original dataset have been used for testing. </h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- ========================== TEAM SECTION ============================== -->
+
+    <section  id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8 col-md-8 col-sm-8 col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-uppercase">Contact</h2>
+            <p class="large text-muted">This website contains the methodology and the results of the AiSight Challenge. <br> It has been developed by: </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">
+		  </div>
+          <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">
+            <div class="team-member">
+              <a href="https://www.alexis-carbillet.eu/"><img class="mx-auto rounded-circle" src="img/team/alexis_carbillet.png" alt=""></a>
+              <a href="https://www.alexis-carbillet.eu/"><h4>Alexis Carbillet</h4></a>
+              <p class="text-muted">French Student</p>
+              <ul class="list-inline social-buttons">
+				<li class="list-inline-item">
+                  <a href="https://github.com/alexiscarbillet">
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+				<li class="list-inline-item">
+                  <a href="https://www.alexis-carbillet.eu/">
+                    <i class="fa fa-home"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/alexis-carbillet">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ======================================================================= -->
+
+
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer>
+      <div class="container">
+        <div class="row">
+		<div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">
+            <span class="copyright">Copyright &copy; 2019</span>
+         </div>
+        </div>
+      </div>
+    </footer>
+
+<!-- ======================================================================= -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+
+    <!-- Activate the bootstrap tooltip, must be after jQuery load -->
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+    </script>
+  </body>
+</html>
